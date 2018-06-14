@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf8">
+<meta http-equiv="content-language" content="zh-tw">
+<meta name="description" content="Doom,毀滅戰士,相關網頁, 提供愛好 Classic Doom 也就是 Doom,Doom 2,TNT,Plutonia,Heretic,一系列由 id software 設計的遊戲 毀滅戰士 系列的玩家一個連線交流, 研究討論的空間, 並且提供 外掛地圖 的 下載。">
+
+<meta name="keywords" content="Doom, Doom 2, Doom2, Doom 3,Doom3, Tnt, Plutonia, Heretic, Hexen, 毀滅戰士, WAD, Demo,錄影 , 地圖, WAD設計, FPS, 第一人稱, 射擊, Legacy, JDoom, ZDOOM, Zdaemon, 論壇, 留言板, Deathmatch, Cooperative, 訓練, 戰鬥, PK, 死鬥, 合作, 軍階, 故事背景">
+<meta name="author" content="Darway">
+<title>Doom Barracks 毀滅戰士營</title>
+<style type="text/css">
+<!--
+a {text-decoration: none; color:#AAAAAA}
+a:hover {font-weight: bold; color:#DDDDDD}
+A:active {font-weight: bold; color:#ffff00}
+-->
+</style>
+<script language="javascript">
+var botOn = 0;
+function bot_Over(ind) { //在按鈕上面時
+  if (botOn != ind)
+    eval("td"+ind+".background='bot_b.gif'");
+  sound.src='dsswtchx.wav';
+}
+
+function bot_Out(ind) { //在按鈕之外時
+  if (botOn != ind)
+    eval("td"+ind+".background='bot_a.gif'");
+  sound.src='';
+}
+
+function bot_Down(ind) { //按下按鈕時
+  if (botOn != 0)
+    eval("td"+botOn+".background='bot_a.gif'");
+  botOn = ind;
+  eval("td"+ind+".background='bot_c.gif'");
+  sound.src='dsswtchn.wav';
+}
+</script>
+</head>
+<body bgcolor="#000000" background="bg-spacew3.jpg" oncontextmenu="return false" ondragstart="return false">
+<center>
+<font face="arial">
+<br>
+<table width="500" border="0" cellspacing="0" cellpadding="2" align="center" style="font:10pt"> 
+<tr align="center">
+<th height="488" background="Scr.gif">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,42,0"
+  id="help" width="400" height="400">
+  <param name="movie" value="help.swf">
+  <param name="bgcolor" value="#FFFFFF">
+  <param name="quality" value="high">
+  <param name="allowscriptaccess" value="samedomain">
+  <param name="wmode" value="transparent">
+  <embed src="help.swf"
+   width="400" height="400" type="application/x-shockwave-flash"
+   pluginspage="http://www.macromedia.com/go/getflashplayer"
+   name="help"
+   bgcolor="#FFFFFF" quality="high"
+   swLiveConnect="true" allowScriptAccess="samedomain" wmode="transparent"
+  ></embed>
+</object>
+</th>
+</tr>
+</table>
+<br>
+<table width="128" border="0" cellspacing="0" cellpadding="2" align="center" style="font:10pt"> 
+<tr align="center">
+<td id="td1" height="30" background="bot_a.gif">
+<a href="index.html" title="進入-毀滅戰士營-首頁(2006-01-23)" onMouseDown="bot_Down(1);" onMouseOver="bot_Over(1)" onMouseOut="bot_Out(1)">
+<font size="2">進入本營</font>
+</a>
+</td>
+</tr>
+</table>
+<br>
+<table width="400" border="1" cellspacing="0" cellpadding="2" align="center" style="font:10pt"> 
+<tr align="center">
+<td style="color:#ffffee;font:10pt">
+請以 1024 x 768(含)以上的解析度瀏覽本營
+</td>
+</tr>
+<tr align="center">
+<td style="color:#ffffee;font:10pt">
+本營首頁網址 http://darway.myweb.hinet.net/
+</td>
+</tr>
+</table>
+
+</font>
+</center>
+</body>
+
+</html>
